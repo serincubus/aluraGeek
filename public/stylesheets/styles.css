@@ -31,7 +31,36 @@ ol, ul, li {
     width: 374px;
     height: 56px;
   
+}
+
+.linea__divisora{
+    width: 430px;
+    height: 5px;
+}
+
+.agregar__producto{
+    width: 430px;
+    height: 556px;
+    background-color: #ffffff;
+}
+
+.h3__titulo{
+    width: 350px;
+    height: 48px;
+    font-family: 'Press Start 2P';
+    font-size: 24px;
+}
+
+.form__agregar__producto{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 40px;
 
 }
 
+.input__agregar__producto{
+    width: 350px;
+    height: 58px;
+}
 
