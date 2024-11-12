@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&display=swap');
 
 *{
     margin: 0;
@@ -42,6 +43,11 @@ ol, ul, li {
     width: 430px;
     height: 556px;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    gap: 40px;
 }
 
 .h3__titulo{
@@ -49,18 +55,60 @@ ol, ul, li {
     height: 48px;
     font-family: 'Press Start 2P';
     font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .form__agregar__producto{
     display: flex;
-    justify-content: center;
-    align-items: center; 
+    flex-direction: column;
     gap: 40px;
 
 }
 
+.input__agregar__producto::placeholder{
+     font-family: "IBM Plex Mono";
+     color:#03318C
+}
+    
+     
 .input__agregar__producto{
     width: 350px;
     height: 58px;
+    border-radius:45px;
+    border-color: #03318C;
+    padding-left: 12px;
 }
+
+.contenedor__botones{
+    width: 350px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedor__botones button{
+    width: 164px;
+    height: 55px;
+    border-radius: 15px;
+    
+}
+
+.boton__enviar{
+    background-color: #03318C;
+    font-family: "IBM Plex Mono";
+    color:#ffffff;
+
+}
+
+.boton__limpiar{
+    background-color: #ffffff;
+    border-color: #03318C;
+    font-family: "IBM Plex Mono";
+    color:#03318C
+    
+    };
+
+
 
