@@ -177,4 +177,61 @@ ol, ul, li {
 
 }
 
+.footer{
+    width: 430px;
+    height: 168px;
+    background-color: #5300C8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.corazones__alura{
+    width: 374px;
+    height: 56px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.h3__alurageek{
+    font-family: "Press Start 2p";
+    font-size: 24px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto__final__footer{
+    width: 269px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parrafo__desarrollado{
+    width: 269px;
+    height: 18px;
+    font-family: "IBM Plex Mono";
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.alura__año{
+    width: 269px;
+    height: 18px;
+    font-family: "IBM Plex Mono";
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
 
