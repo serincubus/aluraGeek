@@ -12,27 +12,44 @@ ol, ul, li {
     list-style: none;
 }
 
-.body_mobile{
+.body{
     width: 430px;
     height: 703px;
     background-color: #E5E5E5;
 }
 
 /* HEADER */
-.header__mobile{
+.header{
     width: 430px;
     height: 96px;
     background-color: #5300C8;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     
 }
 
 .contenedor__corazones__alura{
-    width: 374px;
+    width: 138px;
     height: 56px;
   
+}
+
+.header__h3__alurageek{
+    width: 270px;
+    height: 51px;
+    font-family: "Press Start 2p";
+    font-size: 24px;
+    color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.linea__divisora{
+    width: 430px;
+    height: 5px;
 }
 
 /*MAIN FORMULARIO AGREGAR PRODUCTOS*/
@@ -232,6 +249,53 @@ ol, ul, li {
     font-weight: lighter;
     text-align: center;
 }
+/*desktop*/
+
+@media (min-width:1440px){
+
+/*header*/
+
+.header{
+    width: 1440px;
+    height: 96px;
+}    
+
+.linea__divisora{
+    width: 1440px;
+    height: 5px;
+}
+
+/*main*/
+
+.body{
+    width: 1440px;
+    height: 1235px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    width: 1440px;
+    height: 1235px;
+   
+}
+ 
+.agregar__producto{
+    width: 472px;
+    height: 517px;
+   order: 1;
+}  
+
+.mis__productos{
+    width: 758px;
+    height: 1115px;
+    order: 0;
+}
+
+}
+
+
+
 
 
 
