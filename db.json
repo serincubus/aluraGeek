@@ -1,0 +1,10 @@
+{
+    "products":[
+        {
+            "id":1,
+            "nombre":"stormtrooper",
+            "precio": 60,
+            "imagen":"starwars.svg"
+        }
+    ]
+}
