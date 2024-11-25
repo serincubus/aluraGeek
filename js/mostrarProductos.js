@@ -3,7 +3,7 @@ const lista = document.querySelector("[data-lista]");
 
 function crearCard(nombre, precio, imagen){
     const contenProducto = document.createElement('div');
-    contenProducto.className('contenedor__producto');
+    contenProducto.className='contenedor__producto';
     contenProducto.innerHTML=`<img class="imagen__producto" src="/public/images/${imagen}" alt="tasa stormtrooper">
                 <p class="nombre__producto">${nombre}</p>
                 <div class="p_e_icono">
@@ -14,10 +14,12 @@ function crearCard(nombre, precio, imagen){
         return contenProducto;        
 }
 
-async function listProductos(){
-    const listApi=conexionApi.listarProductos()
-
-    listApi.forEach(product => lista.appendChild(crearCard(product.nombre, product.precio, product.imagen)));
-}
-
-listProductos()
+async function listProductos() { 
+    try { const listApi = await conexionApi.listarProductos();
+         // Espera la promesa 
+         listApi.forEach(product => lista.appendChild(crearCard(product.nombre, product.precio, product.imagen)));
+         } catch (error) { 
+            console.error("Error al listar productos:", error);
+         } 
+        } 
+        listProductos();
