@@ -16,7 +16,8 @@ async function crearProducto(nombre, precio, imagen) {
         imagen: imagen.value 
 
         }; 
-
+        
+        
         const respuesta = await fetch('http://localhost:3001/products', { 
 
             method: 'POST', 
@@ -24,6 +25,8 @@ async function crearProducto(nombre, precio, imagen) {
             body: JSON.stringify(nuevoProducto)
              
         });
+
+        
               if (!respuesta.ok) {
                  throw new Error('Error al crear el producto');
                  }
@@ -31,7 +34,7 @@ async function crearProducto(nombre, precio, imagen) {
                  return await respuesta.json(); 
                  
                 }
-
+                
 export const conexionApi={
     listarProductos,crearProducto
 }

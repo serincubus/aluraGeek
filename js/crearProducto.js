@@ -17,4 +17,8 @@ async function crearProducto(evento){
       alert('Hubo un error al crear el producto'); }
 }
 
-formulario.addEventListener("submit", evento=> crearProducto(evento));
+function limpiarFormulario(evento) {
+   evento.preventDefault();
+    formulario.reset(); // Esta función limpia todos los campos del formulario }
+}
+formulario.addEventListener("submit", crearProducto);
