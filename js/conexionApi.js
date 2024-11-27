@@ -8,14 +8,18 @@ async function listarProductos(){
 }
 
 async function crearProducto(nombre, precio, imagen) {
-     const nuevoProducto = { 
+
+    const nombreImagen = imagen.value.split('\\').pop();
+        const nuevoProducto = { 
 
         id: Date.now(), // Usar la marca de tiempo actual como id único 
         nombre: nombre.value, 
         precio: parseFloat(precio.value), // Asegurarse de que el precio sea un número 
-        imagen: imagen.value 
+        imagen: nombreImagen
 
         }; 
+
+        console.log('Nuevo producto:', nuevoProducto);
         
         
         const respuesta = await fetch('http://localhost:3001/products', { 
@@ -31,7 +35,9 @@ async function crearProducto(nombre, precio, imagen) {
                  throw new Error('Error al crear el producto');
                  }
 
-                 return await respuesta.json(); 
+                 const productoCreado = await respuesta.json(); 
+                 console.log("producto creado:". productoCreado);
+                 return productoCreado
                  
                 }
                 

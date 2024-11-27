@@ -8,6 +8,10 @@ async function crearProducto(evento){
     const precio = document.querySelector("[data-precio]");
     const imagen = document.querySelector("[data-imagen]");
 
+    
+
+    console.log('Formulario enviado');
+    
     try { 
       await conexionApi.crearProducto(nombre, precio, imagen); 
       alert('Producto creado exitosamente'); 
@@ -22,3 +26,4 @@ function limpiarFormulario(evento) {
     formulario.reset(); // Esta función limpia todos los campos del formulario }
 }
 formulario.addEventListener("submit", crearProducto);
+console.log(crearProducto);
