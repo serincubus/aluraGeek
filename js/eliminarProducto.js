@@ -1,4 +1,5 @@
-import { conexionApi } from "./conexionApi.js";
+
+
  async function eliminarProducto(id) { 
     try { const respuesta = await fetch(`http://localhost:3001/products/${id}`, {
          method: 'DELETE', 

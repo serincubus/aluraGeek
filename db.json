@@ -1,28 +1,28 @@
 {
   "products": [
     {
-      "id": "1732724024574",
-      "nombre": "Game Boy Clasic",
-      "precio": 100,
-      "imagen": "gameboy.png"
-    },
-    {
-      "id": 1732847536714,
+      "id": "1732884609848",
       "nombre": "tasa stormtrooper",
-      "precio": 60,
+      "precio": 90,
       "imagen": "stormtrooper.png"
     },
     {
-      "id": 1732847569598,
+      "id": "1732885098351",
+      "nombre": "tasa stormtrooper",
+      "precio": 200,
+      "imagen": "stormtrooper.png"
+    },
+    {
+      "id": 1732891180686,
+      "nombre": "tasa stormtrooper",
+      "precio": 100,
+      "imagen": "starwars.svg"
+    },
+    {
+      "id": 1732891199341,
       "nombre": "Game Boy Clasic",
       "precio": 150,
       "imagen": "gameboy.png"
-    },
-    {
-      "id": 1732847609794,
-      "nombre": "tasa stormtroper",
-      "precio": 70,
-      "imagen": "stormtrooper.png"
     }
   ]
 }

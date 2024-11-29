@@ -4,6 +4,8 @@
   "description": "alura challenge",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js", 
+     "api": "json-server --watch db.json --port 3001",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
