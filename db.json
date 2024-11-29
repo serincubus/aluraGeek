@@ -1,16 +1,28 @@
 {
   "products": [
     {
-      "id": "1",
-      "nombre": "stormtrooper",
-      "precio": 60,
-      "imagen": "starwars.svg"
-    },
-    {
-      "id": 1732724024574,
+      "id": "1732724024574",
       "nombre": "Game Boy Clasic",
       "precio": 100,
       "imagen": "gameboy.png"
+    },
+    {
+      "id": 1732847536714,
+      "nombre": "tasa stormtrooper",
+      "precio": 60,
+      "imagen": "stormtrooper.png"
+    },
+    {
+      "id": 1732847569598,
+      "nombre": "Game Boy Clasic",
+      "precio": 150,
+      "imagen": "gameboy.png"
+    },
+    {
+      "id": 1732847609794,
+      "nombre": "tasa stormtroper",
+      "precio": 70,
+      "imagen": "stormtrooper.png"
     }
   ]
 }

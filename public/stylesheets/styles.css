@@ -146,6 +146,15 @@ ol, ul, li {
 
 }
 
+.div__productos{
+    width: 430px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+
+}
+
 .contenedor__producto{
     background-color: #5D04D9;
     border: solid 1px #000000;
@@ -154,9 +163,9 @@ ol, ul, li {
     height: 258px;
     margin-left: 9.5px;
     margin-right: 9.5px;
+    margin-bottom: 20px;
     padding-top: 8px;
     padding-bottom: 8px; 
-    
     }
 
 .imagen__producto{
@@ -302,6 +311,13 @@ ol, ul, li {
     text-align: center;
     margin-top:50px;
     margin-bottom: 50px;
+}
+
+.div__productos{
+    width: 758px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 /*footer*/
